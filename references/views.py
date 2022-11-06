@@ -84,7 +84,7 @@ class ListTZApiView(generics.ListCreateAPIView):
     pagination_class = pagination.LimitOffsetPagination
     filter_backends = [filters.SearchFilter, rest_framework.DjangoFilterBackend]
     search_fields = ['name', 'kpgz', 'spgz']
-    filterset_fields = ['id']
+    filterset_fields = ['id', 'document_id']
 
 
 class UpdateTZApiView(generics.UpdateAPIView):
@@ -116,7 +116,7 @@ class ListSPGZApiView(generics.ListCreateAPIView):
     pagination_class = pagination.LimitOffsetPagination
     filter_backends = [filters.SearchFilter, rest_framework.DjangoFilterBackend]
     search_fields = ['kpgz', 'spgz']
-    filterset_fields = ['id']
+    filterset_fields = ['id', 'document_id']
 
 
 class UpdateSPGZApiView(generics.UpdateAPIView):

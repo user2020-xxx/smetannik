@@ -16,6 +16,7 @@ class TzModel(models.Model):
     kpgz = models.CharField(max_length=2000)
     id_spgz = models.IntegerField()
     spgz = models.CharField(max_length=2000)
+    document_id = models.IntegerField(null=True)
 
 
 class SPGZKPGZModel(models.Model):
@@ -24,6 +25,7 @@ class SPGZKPGZModel(models.Model):
     units = models.CharField(max_length=20)
     okpd = models.CharField(max_length=128)
     okpd2 = models.CharField(max_length=128)
+    document_id = models.IntegerField(null=True)
 
 
 class EstimateModel(models.Model):
