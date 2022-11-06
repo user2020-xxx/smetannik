@@ -1,0 +1,6 @@
+*__pycache__
+*media
+*/migrations/*
+pycache/
+*/pycache/
+/venv
